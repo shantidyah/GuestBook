@@ -11,8 +11,8 @@ class Guest{
             lastName:req.body.lastName,
             address:req.body.address
         })
-        .then(function(newguest){
-            res.json(newguest)
+        .then(function(guest){
+            res.json(guest)
         })
         .catch(function(err){
             res.json(err)
