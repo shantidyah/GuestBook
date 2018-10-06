@@ -4,8 +4,8 @@ const { Op } = require('sequelize')
 
 class Guest{
     static Create( req, res ){
-        console.log("masuk sini",req.body);
-        res.json(req.body)
+        console.log(req);
+        
         Book.create({
             firstName:req.body.firstName,
             lastName:req.body.lastName,
